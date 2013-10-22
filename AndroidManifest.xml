@@ -1,0 +1,181 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lokal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" >
+        
+    </uses-permission>
+    
+    <application
+        android:icon="@drawable/senses"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="030a08bec21770410d351f4f22d0a6f0" />
+        <activity
+            android:name=".Index"
+            android:label="@string/title_activity_dashboard" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Dashboard">
+        </activity>
+        <activity android:name=".FirstIn">
+        </activity>
+        <activity android:name=".Write">
+        </activity>
+        <activity android:name=".Camera">
+        </activity>
+        <activity android:name=".Register">
+        </activity>
+        <activity android:name=".PicCutActivity">
+        </activity>
+        <activity android:name=".Login">
+        </activity>
+        <activity android:name=".Localmsg"
+            android:launchMode="singleInstance">
+        </activity>
+        <activity android:name=".Localmsg_Web">
+        </activity>
+        <activity android:name=".Focus">
+        </activity>
+        <activity android:name=".Notifiation">
+        </activity>
+        <activity android:name=".MyLocation">
+        </activity>
+        <activity android:name=".Collect">
+        </activity>
+        <activity android:name=".Setting">
+        </activity>
+        <activity android:name=".LoadMore">
+        </activity>
+        <activity android:name=".Map">
+        </activity>
+        <activity android:name=".Comment">
+        </activity>
+        <activity android:name=".Todo">
+        </activity>
+        <activity android:name=".Inbox">
+        </activity>
+        <activity android:name=".LocationManager">
+            
+        </activity>
+
+        
+        <activity android:name="com.amapv2.cn.apis.MainActivity" >
+
+        </activity>
+        <activity
+            android:name="com.amapv2.cn.apis.BasicMapActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/basic_map" />
+        <activity
+            android:name="com.amapv2.cn.apis.CameraDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/camera_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.EventsDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/events_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.LayersDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/layers_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.MarkerDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/marker_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.poisearch.PoisearchDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/poisearch_demo"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" >
+            </meta-data>
+        </activity>
+
+        <activity
+            android:name="com.amapv2.cn.apis.LocationSourceDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/locationsource_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.LocManagerProxyDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/locationmanagerproxy_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.OptionsDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/options_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.PolygonDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/polygon_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.PolylineDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/polyline_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.MultiMapDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/multi_map_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.ProgrammaticDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/programmatic_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.UiSettingsDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/uisettings_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.route.RouteDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/route_demo" />
+        <activity
+            android:name="com.amapv2.cn.apis.GeocoderDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/geocoder_demo" />
+
+
+        <service android:name="com.senses.services.InboxService"/>
+        
+    </application>
+
+
+</manifest>

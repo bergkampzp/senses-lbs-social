@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost
+	android:id="@+id/my_tabhost"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="#F4F4E9"
+		android:orientation="vertical"
+		
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+
+
+           <FrameLayout
+               
+			android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+			android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+			</FrameLayout>
+        
+    
+			<TabWidget
+				android:id="@android:id/tabs"
+				android:visibility="gone"
+				android:layout_width="fill_parent"
+				
+				android:layout_height="wrap_content"
+                android:layout_weight="0.0" />
+       				<RadioGroup
+						android:id="@+id/tab_radiogroup"
+               			android:layout_width="fill_parent"
+               			
+          				android:layout_height="wrap_content" android:gravity="center_vertical"
+          				android:layout_gravity="bottom" android:orientation="horizontal">
+
+			           <RadioButton
+			               android:id="@+id/radio_button_study"
+			               style="@style/tab_button_bottom"
+			               android:checked="true"
+			               
+			               android:drawableTop="@drawable/location_web_site"
+			               android:text="@string/localmsg" />
+			
+			           <RadioButton android:id="@+id/radio_button_score"
+			              android:text="@string/notification"
+			              android:drawableTop="@drawable/contact" style="@style/tab_button_bottom" />
+			           <RadioButton android:id="@+id/radio_button_certificate"
+			              android:text="@string/map"
+			              android:drawableTop="@drawable/location_place" style="@style/tab_button_bottom" />
+			           <RadioButton android:id="@+id/radio_button_fee"
+			              android:text="@string/apps"
+			              android:drawableTop="@drawable/messege" style="@style/tab_button_bottom" />
+			           <RadioButton android:id="@+id/radio_button_more"
+			              android:text="@string/setting"
+			              android:drawableTop="@drawable/settings" style="@style/tab_button_bottom" />
+       			</RadioGroup>
+    </LinearLayout>
+</TabHost>
+
+
+    	

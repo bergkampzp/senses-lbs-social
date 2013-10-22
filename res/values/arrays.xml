@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrcontent">
+        <item>拍照</item>
+        <item>录音</item>
+        <item>录制视频</item>
+    </string-array>
+</resources>

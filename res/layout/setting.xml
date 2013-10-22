@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"     
+xmlns:tools="http://schemas.android.com/tools"     
+android:layout_width="match_parent"     
+android:layout_height="match_parent"       
+android:background="#DFE1E0"     
+android:orientation="vertical">  
+ <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/corners_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/s_face"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/senses" />
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/s_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" >
+                
+            </TextView>
+
+            <TextView
+                android:id="@+id/s_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="" >
+                
+            </TextView>
+        </LinearLayout>
+        
+
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"  
+        xmlns:tools="http://schemas.android.com/tools"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+         android:orientation="horizontal">  
+         <TextView  
+            style="@style/MySettingText"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="开启通知"            />  
+        <ToggleButton android:id="@+id/tb" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:textOn="开"
+android:textOff="关"
+android:checked="true"
+ />  
+    </LinearLayout>  
+        <LinearLayout   
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+         android:orientation="horizontal">  
+        <TextView  
+            style="@style/MySettingText"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="开启铃声"            />  
+        <ToggleButton android:id="@+id/tb" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:textOn="开"
+android:textOff="关"
+android:checked="true"
+ />  
+    </LinearLayout>  
+        <LinearLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+         android:orientation="horizontal">  
+         <TextView  
+            style="@style/MySettingText"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="开启震动"            />  
+        <ToggleButton android:id="@+id/tb" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:textOn="开"
+android:textOff="关"
+android:checked="true"
+ />  
+    </LinearLayout>
+           <LinearLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+         android:orientation="horizontal">  
+         <TextView  
+            style="@style/MySettingText"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="接收推广信息"            />  
+        <ToggleButton android:id="@+id/tb" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:textOn="开"
+android:textOff="关"
+android:checked="true"
+ />  
+    </LinearLayout>
+     
+    <LinearLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+         android:orientation="horizontal">  
+         <TextView  
+            style="@style/MySettingText"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="接收周边商店信息"            />  
+        <ToggleButton android:id="@+id/tb" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:textOn="开"
+android:textOff="关"
+android:checked="true"
+ />  
+    </LinearLayout>
+    
+
+    <Button
+            android:id="@+id/update_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="检查更新" />
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注销" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:text="退出" />
+
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="      版本:1.0 beta      Copyright@Senses" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="      Contact Us:137220682(QQ)" />
+  
+</LinearLayout>  

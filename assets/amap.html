@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>设置地图是否允许缩放</title>
+<!--<style>
+body{ margin:0; padding:0;font:12px/16px Verdana, Helvetica, Arial, sans-serif;}
+</style>-->
+<link rel="stylesheet" href="/Public/Css/demo.Default.css" type="text/css" />
+<script language="javascript" src="http://webapi.amap.com/maps?v=1.1&key=030a08bec21770410d351f4f22d0a6f0"></script>
+<script language="javascript">
+
+var mapObj,toolbar,overview,scale;
+function mapInit()
+{
+	var opt = {
+	level:13,//设置地图缩放级别
+	center:new AMap.LngLat(116.397428,39.90923),//设置地图中心点	
+	doubleClickZoom:true,//双击放大地图
+	scrollWheel:true//鼠标滚轮缩放地图
+	}
+	mapObj = new AMap.Map("iCenter",opt);
+	mapObj.plugin(["AMap.ToolBar","AMap.OverView","AMap.Scale"],function()
+	{ 
+	toolbar = new AMap.ToolBar();
+	toolbar.autoPosition=false; //加载工具条 
+	mapObj.addControl(toolbar);  	
+	overview = new AMap.OverView(); //加载鹰眼
+	mapObj.addControl(overview);  	
+	scale = new AMap.Scale(); //加载比例尺
+	mapObj.addControl(scale);
+	}); 
+}
+
+</script>
+</head>
+<body onload="mapInit();">
+<div id="iCenter" style="width:330px; height:430px;"></div>
+<b>缩放控制</b>包括<b>鼠标缩放、键盘缩放</b>和<b>工具条缩放</b>
+<a href="javascript:mapObj.setStatus({zoomEnable:true});">允许</a>
+<a href="javascript:mapObj.setStatus({zoomEnable:false});">禁止</a>
+</body>
+</html>
+
+
